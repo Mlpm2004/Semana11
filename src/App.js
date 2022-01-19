@@ -1,28 +1,17 @@
 import './App.css';
 import React from 'react';
-import { useState } from 'react';
-import Input from './components/forms/input'
-import {ContainerBox,Container} from './components/style'
+import Exercicio1 from './pages/Exercicio1';
+import Exercicio2 from './pages/Exercicio2';
+import Home from './pages/Home';
+import { Routes,Route } from 'react-router-dom';
 function App() {
-  const [lname,setLname]=useState('');
-  const [email,setEmail]=useState('');
   return (
-    <Container>
-        <ContainerBox>
-            <h1>Exercício 1</h1>
-            <Input 
-                label="Last Name"
-                value={lname}
-                onChange={(event)=>{setLname(event.target.value)}}
-            />
-           <Input 
-                label="Email"
-                type="mail"
-                value={email}
-                onChange={(event)=>{setEmail(event.target.value)}}
-            />
-        </ContainerBox>
-    </Container>
+      <Routes> 
+          <Route path="/" element={<Home/>}/>
+          <Route path="/Exercicio1" element={<Exercicio1/>}/>
+          <Route path="/Exercicio2" element={<Exercicio2/>}/>
+          <Route path="/Exercicio3" element={<Exercicio1/>}/>
+      </Routes>
   );
 }
 
