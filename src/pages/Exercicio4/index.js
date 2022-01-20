@@ -5,8 +5,7 @@ import {ContainerBox,Container} from '../../components/style'
 import { Link } from 'react-router-dom';
 import { Children } from 'react/cjs/react.production.min';
 function Exercicio4() {
-  const [radiomale,setRadioMale]=useState('');
-  const [radiofemale,setRadioFemale]=useState('');
+  const [sex,setSex]=useState('');
   return (
 
    <Container>
@@ -17,16 +16,15 @@ function Exercicio4() {
                 label="Male"
                 type="radio"
                 name="testeradio"
-                checked
-                value={radiomale}
-                onChange={(event)=>{setRadioMale(event.target.value)}}
+                value="Male"
+                onChange={(event)=>{setSex(event.target.value)}}
             />
            <Radio 
                 label="Female"
                 type="radio"
                 name="testeradio"
-                value={radiofemale}
-                onChange={(event)=>{setRadioFemale(event.target.value)}}
+                value="Female"
+                onChange={(event)=>{setSex(event.target.value)}}
             />
         </ContainerBox>
     </Container>  );
