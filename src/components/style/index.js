@@ -17,3 +17,11 @@ export const Container=styled.div`
     justify-content:center
 
 `;
+
+export const LinkFormat=styled.link`
+    font-size:16px;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration:none;
+`;
+
