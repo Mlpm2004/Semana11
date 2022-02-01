@@ -7,6 +7,7 @@ import Exercicio4 from './pages/Exercicio4';
 import Exercicio5 from './pages/Exercicio5';
 import Exercicio6 from './pages/Exercicio6';
 import Exercicio7 from './pages/Exercicio7';
+import Exercicio8 from './pages/Exercicio8';
 import Home from './pages/Home';
 import { Routes,Route } from 'react-router-dom';
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Exercicio5" element={<Exercicio5/>}/>
           <Route path="/Exercicio6" element={<Exercicio6/>}/>
           <Route path="/Exercicio7" element={<Exercicio7/>}/>
+          <Route path="/Exercicio8" element={<Exercicio8/>}/>
       </Routes>
   );
 }
